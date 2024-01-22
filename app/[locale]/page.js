@@ -7,6 +7,7 @@ import Header from "@/Components/Header";
 import Rooms from "@/Components/Rooms";
 import SlidingPics from "@/Components/SlidingPics";
 import SlidingImages from "@/Components/SlidingImages";
+import StaticImages from "@/Components/StaticImages";
 
 const i18nNamespaces = ["home", "common"];
 
@@ -18,10 +19,11 @@ export default async function Home({ params: { locale } }) {
       locale={locale}
       namespaces={i18nNamespaces}
     >
-      <main className="">
+      <main className="h-full">
         <Header />
         <Main />
         <SlidingImages />
+
         <Rooms />
       </main>
     </TranslationsProvider>

@@ -5,6 +5,7 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
+import StaticImages from "./StaticImages";
 
 const images = [
   "1.jpg",
@@ -22,6 +23,18 @@ const images = [
 ];
 
 export default function SlidingImages() {
+  const [isNotMobile, setIsNotMobile] = useState(true);
+  useEffect(() => {
+    const checkIsNotMobile = () => {
+      setIsNotMobile(window.innerWidth > 950);
+    };
+
+    checkIsNotMobile();
+    window.addEventListener("resize", checkIsNotMobile);
+
+    return () => window.removeEventListener("resize", checkIsNotMobile);
+  }, []);
+
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -60,15 +73,20 @@ export default function SlidingImages() {
   }, []);
 
   return (
-    <main className="">
-      <div className={styles.spacer}></div>
-      <div ref={gallery} className={styles.gallery}>
-        <Column images={[images[0], images[1], images[2]]} y={y} />
-        <Column images={[images[3], images[4], images[5]]} y={y2} />
-        <Column images={[images[6], images[7], images[8]]} y={y3} />
-        <Column images={[images[9], images[10], images[11]]} y={y4} />
+    <main className=" ">
+      <div className="hidden md:flex flex-col">
+        <div className={styles.spacer}></div>
+        <div ref={gallery} className={styles.gallery}>
+          <Column images={[images[0], images[1], images[2]]} y={y} />
+          <Column images={[images[3], images[4], images[5]]} y={y2} />
+          <Column images={[images[6], images[7], images[8]]} y={y3} />
+          <Column images={[images[9], images[10], images[11]]} y={y4} />
+        </div>
+        <div className={styles.spacer}></div>
       </div>
-      <div className={styles.spacer}></div>
+      <div className="flex flex-col md:hidden">
+        <StaticImages />
+      </div>
     </main>
   );
 }

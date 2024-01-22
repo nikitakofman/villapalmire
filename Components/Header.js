@@ -21,7 +21,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="fixed bg-white z-50 flex  h-12 justify-around items-center w-full">
+    <div className="fixed bg-white z-50 flex  h-16 justify-around items-center w-full">
       <div className="flex w-full items-center  pl-5 md:pl-10">
         {/* <Image
           width={100}
