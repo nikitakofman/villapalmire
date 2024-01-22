@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BACKGROUNDS */
+
+.villabg1 {
+  background-image: url("/villamain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.terracebg {
+  background-image: url("/terrace.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.vuebg {
+  background-image: url("/vue.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.greenterracebg {
+  background-image: url("/greenterrace.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* BACKGROUNDS */
+
+.underline-animation p {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation p::after {
+  content: "";
+  position: absolute;
+  width: 93%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000; /* or any color you want */
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+}
+
+.underline-animation p:hover::after {
+  transform: scaleX(1);
+}
+
+.underline-animation2 p {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation2 p::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* or any color you want */
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.underline-animation2 p:hover::after {
+  transform: scaleX(1);
+}
+
+.bm-burger-button {
+  width: 36px;
+  height: 30px;
+  left: 36px;
+
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 0.3rem 0.3rem 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* styling next link component so that will be a column list of links*/
+.bm-item-list a {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .content {
+  letter-spacing: vw;
+  overflow: hidden;
+} */
+
+.language-selector::after {
+  content: "►";
+  display: inline-block;
+  color: lightgray;
+
+  transition: transform 0.3s ease;
+}
+
+.language-selector.open::after {
+  transform: rotate(90deg);
+}
