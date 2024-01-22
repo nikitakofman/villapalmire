@@ -36,7 +36,10 @@ export default function SlidingImages() {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      lerp: 0.1, // Adjust this value to find the right balance for smoothness
+      smooth: true, // Set to false if performance is still an issue
+    });
 
     const raf = (time) => {
       lenis.raf(time);
