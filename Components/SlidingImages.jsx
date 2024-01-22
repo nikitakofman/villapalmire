@@ -38,7 +38,7 @@ export default function SlidingImages() {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 1, // Adjust this value to find the right balance for smoothness
-      smooth: true, // Set to false if performance is still an issue
+      smooth: false, // Set to false if performance is still an issue
     });
 
     const raf = (time) => {
