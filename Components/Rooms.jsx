@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function Rooms() {
   return (
     <>
+      <div id="rooms" />
       <div className="h-svh">
         <div className="p-5 md:p-10 gap-2 h-full flex-col md:flex-row flex items-center justify-center">
           {/* <Image src="/ch1.jpg" alt="Chambre 1" width={300} height={300} />

@@ -20,7 +20,7 @@ export default async function Home({ params: { locale } }) {
       locale={locale}
       namespaces={i18nNamespaces}
     >
-      <main className="h-full">
+      <main className="h-full main">
         <Header />
         <Main />
         <SlidingImages />

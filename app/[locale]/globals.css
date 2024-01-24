@@ -6,6 +6,14 @@
 
 /* BACKGROUNDS */
 
+html {
+  scroll-behavior: smooth;
+}
+
+.lenis-scrolling {
+  scroll-behavior: initial;
+}
+
 .villabg1 {
   background-image: url("/villamain.jpg");
   background-size: cover;

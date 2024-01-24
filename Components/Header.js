@@ -50,9 +50,11 @@ function Header() {
       </div>
       <div className=" text-[14px] hidden min-w-[420px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-between w-full">
         {/* <p className="">nav1</p> */}
-        <p className="tracking-[0.5rem]">{t("rooms")}</p>
-        <p className="tracking-[0.5rem]">{t("events")}</p>
+        <p className="tracking-[0.5rem]">
+          <a href="#rooms">{t("rooms")}</a>
+        </p>
         <p className="tracking-[0.5rem]">{t("region")}</p>
+        <p className="tracking-[0.5rem]">{t("events")}</p>
       </div>
       <div className="w-full flex gap-3 justify-end pr-5 md:pr-10">
         {isNotMobile ? (

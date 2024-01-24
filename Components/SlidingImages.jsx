@@ -51,7 +51,7 @@ export default function SlidingImages() {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 1, // Adjust this value to find the right balance for smoothness
-      smooth: false, // Set to false if performance is still an issue
+      smooth: true, // Set to false if performance is still an issue
     });
 
     const raf = (time) => {
@@ -74,7 +74,7 @@ export default function SlidingImages() {
 
   return (
     <main className=" ">
-      <div className="hidden md:flex flex-col">
+      <div className="flex-col">
         <div className={styles.spacer}></div>
         <div ref={gallery} className={styles.gallery}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -84,9 +84,9 @@ export default function SlidingImages() {
         </div>
         <div className={styles.spacer}></div>
       </div>
-      <div className="flex flex-col md:hidden">
+      {/* <div className="flex flex-col md:hidden">
         <StaticImages />
-      </div>
+      </div> */}
     </main>
   );
 }
