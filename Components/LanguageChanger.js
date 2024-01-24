@@ -4,16 +4,12 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import i18nConfig from "@/i18nConfig";
-import { useCountries } from "use-react-countries";
-import { Select, Option } from "@material-tailwind/react";
 
 export default function LanguageChangerOLD() {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
-
-  const { countries } = useCountries();
 
   const handleChange = (e) => {
     const newLocale = e.target.value;
@@ -30,14 +26,15 @@ export default function LanguageChangerOLD() {
       currentLocale === i18nConfig.defaultLocale &&
       !i18nConfig.prefixDefault
     ) {
-      router.push("/" + newLocale + currentPathname);
+      router.push("/" + newLocale + currentPathname, { scroll: false });
     } else {
       router.push(
-        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
+        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`),
+        {
+          scroll: false,
+        }
       );
     }
-
-    router.refresh();
   };
 
   return (

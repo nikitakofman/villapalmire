@@ -8,6 +8,7 @@ import Rooms from "@/Components/Rooms";
 import SlidingPics from "@/Components/SlidingPics";
 import SlidingImages from "@/Components/SlidingImages";
 import StaticImages from "@/Components/StaticImages";
+import Regions from "@/Components/Regions";
 
 const i18nNamespaces = ["home", "common"];
 
@@ -25,6 +26,7 @@ export default async function Home({ params: { locale } }) {
         <SlidingImages />
 
         <Rooms />
+        <Regions />
       </main>
     </TranslationsProvider>
   );

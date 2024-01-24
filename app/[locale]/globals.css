@@ -142,11 +142,79 @@
 .language-selector::after {
   content: "►";
   display: inline-block;
-  color: lightgray;
+  color: rgb(0, 0, 0);
 
   transition: transform 0.3s ease;
 }
 
 .language-selector.open::after {
   transform: rotate(90deg);
+}
+
+@keyframes rollDownFromTop {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes rollUpToTop {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+.dropdown-animation-open {
+  animation: rollDownFromTop 0.3s ease-out forwards;
+  transform-origin: top;
+}
+
+.dropdown-animation-close {
+  animation: rollUpToTop 0.3s ease-out forwards;
+  transform-origin: top;
+}
+
+.chambre1bg {
+  background-image: url("/ch1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.chambre2bg {
+  background-image: url("/ch2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.chambre3bg {
+  background-image: url("/ch3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.turbie {
+  background-image: url("/turbie.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.monaco {
+  background-image: url("/monaco.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.cote {
+  background-image: url("/cote.webp");
+  background-size: cover;
+  background-position: center;
 }

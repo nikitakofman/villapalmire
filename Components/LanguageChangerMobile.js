@@ -51,14 +51,28 @@ export default function LanguageChangerMobile() {
       newPath = currentPathname.replace(`/${currentLocale}`, `/${newLocale}`);
     }
 
-    router.push(newPath);
+    router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`), {
+      scroll: false,
+    });
+  };
+
+  const [dropdownAnimation, setDropdownAnimation] = useState("");
+
+  const toggleDropdown = () => {
+    if (!showDropdown) {
+      setDropdownAnimation("dropdown-animation-open");
+      setShowDropdown(true);
+    } else {
+      setDropdownAnimation("dropdown-animation-close");
+      setTimeout(() => setShowDropdown(false), 500); // delay hiding dropdown until animation completes
+    }
   };
 
   return (
     <div className="relative pt-[1px]" ref={dropdownRef}>
       <div
         className={`cursor-pointer px-2 flex  text-[14px] rounded-md bg-none text-gray-800 font-semibold `}
-        onClick={() => setShowDropdown(!showDropdown)}
+        onClick={toggleDropdown}
       >
         <p
           className={`language-selector mr-2  ${showDropdown ? "open" : ""}`}
@@ -67,7 +81,9 @@ export default function LanguageChangerMobile() {
       </div>
 
       {showDropdown && (
-        <div className="absolute  rounded-b-full overflow-hidden right-0 mt-2 py-2  bg-white  shadow-xl z-20">
+        <div
+          className={`${dropdownAnimation} absolute overflow-hidden right-0 mt-2 py-2 bg-white shadow-xl z-20`}
+        >
           {["en", "fr", "it", "ru"].map((locale) => (
             <div
               key={locale}

@@ -66,9 +66,7 @@ function Main() {
               className="bg-white     justify-end  flex p-2 -mb-3.5 text-[#BB9B66]  "
               style={{ fontFamily: "Nanum Myeongjo" }}
             >
-              Located in the town of La Turbie, Villa Palmire welcomes you in a
-              setting of greenery and tranquility, just 8 km from the
-              Principality of Monaco.
+              {t("maindesc")}
             </div>
           </div>
           <div className=" flex flex-col   md:hidden  w-full  bg-white ">
@@ -77,9 +75,7 @@ function Main() {
               className="w-full h-full py-4 text-justify  text-[#BB9B66] p-1 "
               style={{ fontFamily: "Nanum Myeongjo" }}
             >
-              Located in the town of La Turbie, Villa Palmire welcomes you in a
-              setting of greenery and tranquility, just 8 km from the
-              Principality of Monaco.
+              {t("maindesc")}
             </div>
           </div>
         </div>

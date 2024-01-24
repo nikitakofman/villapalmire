@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20vw;
+}
+
+.body {
+  font-size: 16px;
+}
+
+.lineMask {
+  overflow: hidden;
+}
+
+.lineMask p {
+  margin: 0px;
+  font-family: "Nanum Myeongjo";
+  padding: 10px;
+}

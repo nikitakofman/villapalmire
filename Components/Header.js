@@ -6,12 +6,15 @@ import LanguageChangerMobile from "./LanguageChangerMobile";
 import { useEffect, useState } from "react";
 import Burger from "./Burger";
 import Slider from "./Slider";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
+
   const [isNotMobile, setIsNotMobile] = useState(true);
   useEffect(() => {
     const checkIsNotMobile = () => {
-      setIsNotMobile(window.innerWidth > 950);
+      setIsNotMobile(window.innerWidth > 900);
     };
 
     checkIsNotMobile();
@@ -45,11 +48,11 @@ function Header() {
         </div> */}
          
       </div>
-      <div className=" text-[14px] hidden min-w-[370px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-between w-full">
+      <div className=" text-[14px] hidden min-w-[420px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-between w-full">
         {/* <p className="">nav1</p> */}
-        <p className="tracking-[0.5rem]">Rooms</p>
-        <p className="tracking-[0.5rem]">Events</p>
-        <p className="tracking-[0.5rem]">Region</p>
+        <p className="tracking-[0.5rem]">{t("rooms")}</p>
+        <p className="tracking-[0.5rem]">{t("events")}</p>
+        <p className="tracking-[0.5rem]">{t("region")}</p>
       </div>
       <div className="w-full flex gap-3 justify-end pr-5 md:pr-10">
         {isNotMobile ? (

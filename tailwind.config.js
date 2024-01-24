@@ -10,10 +10,10 @@ module.exports = {
   prefix: "",
   theme: {
     screens: {
-      sm: "640px",
+      sm: "750px",
       // => @media (min-width: 640px) { ... }
 
-      md: "950px",
+      md: "900px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",
