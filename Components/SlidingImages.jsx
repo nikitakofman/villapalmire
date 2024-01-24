@@ -74,7 +74,7 @@ export default function SlidingImages() {
 
   return (
     <main className=" ">
-      <div className="flex-col">
+      <div className="hidden md:flex flex-col">
         <div className={styles.spacer}></div>
         <div ref={gallery} className={styles.gallery}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -84,9 +84,9 @@ export default function SlidingImages() {
         </div>
         <div className={styles.spacer}></div>
       </div>
-      {/* <div className="flex flex-col md:hidden">
+      <div className="flex flex-col md:hidden">
         <StaticImages />
-      </div> */}
+      </div>
     </main>
   );
 }
