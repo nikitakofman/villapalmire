@@ -218,3 +218,21 @@
   background-size: cover;
   background-position: center;
 }
+
+@keyframes underline-grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.underline-animate::after {
+  content: "";
+  display: block;
+  margin-top: -1px;
+  height: 1px; /* or the height of your underline */
+  background-color: #bc9d68; /* or your preferred underline color */
+  animation: underline-grow 1s ease-in-out forwards; /* Adjust timing to your liking */
+}

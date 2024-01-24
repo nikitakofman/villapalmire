@@ -28,26 +28,54 @@ export default function Regions() {
   return (
     <div className="h-svh">
       <div className="p-5 md:p-10 flex h-full flex-col ">
-        <div className="flex flex-col md:flex-row h-full">
-          <div className="w-full h-full turbie"></div>
-          <div className="w-full h-full flex items-center justify-center bg-white">
-            <div className="p-5">
+        <div className="flex flex-col h md:flex-row">
+          <div className="w-full h-[200px] md:h-full turbie"></div>
+          <div className="w-full h-full flex flex-col items-center justify-center bg-white">
+            <div className="p-0 md:p-5">
+              <h1
+                ref={ref1}
+                className={`text-left tracking-widest text-[#BC9D68] font-bold w-[164px] pl-2.5 my-0 md:my-3 text-3xl ${
+                  inView1 ? "underline-animate" : ""
+                }`}
+                style={{ fontFamily: "Nanum Myeongjo" }}
+              >
+                La Turbie
+              </h1>
               <MaskText />
             </div>
           </div>
         </div>
-        <div className="flex h-full">
+        <div className="flex flex-col md:flex-row h-full">
+          <div className="w-full  monaco h-[200px] md:h-full flex md:hidden"></div>
           <div className="w-full h-full flex items-center justify-center bg-white">
-            <div className="p-5">
+            <div className="p-0 md:p-5">
+              <h1
+                ref={ref2}
+                className={`text-left tracking-widest my-0 md:my-3 text-[#BC9D68] font-bold w-[135px] pl-3 text-3xl ${
+                  inView2 ? "underline-animate" : ""
+                }`}
+                style={{ fontFamily: "Nanum Myeongjo" }}
+              >
+                Monaco
+              </h1>
               <MaskText2 />
             </div>
           </div>
-          <div className="w-full h-full monaco"></div>
+          <div className="w-full h-full monaco  hidden md:flex"></div>
         </div>
-        <div className="flex h-full">
-          <div className="w-full h-full cote"></div>
-          <div className="w-full h-full flex items-center justify-center bg-white">
-            <div className="p-5">
+        <div className="flex flex-col md:flex-row  h-full">
+          <div className="w-full h-[200px] md:h-full cote"></div>
+          <div className="w-full h-full flex items-center flex-col justify-center bg-white">
+            <div className="p-0 md:p-5">
+              <h1
+                ref={ref3}
+                className={`text-left tracking-widest my-0 md:my-3 text-[#BC9D68] font-bold w-[120px] pl-2 text-3xl ${
+                  inView3 ? "underline-animate" : ""
+                }`}
+                style={{ fontFamily: "Nanum Myeongjo" }}
+              >
+                Riviera
+              </h1>
               <MaskText />
             </div>
           </div>
@@ -74,7 +102,7 @@ export function MaskText() {
   };
 
   const { ref, inView, entry } = useInView({
-    threshold: 0.75,
+    threshold: 1,
     triggerOnce: true,
   });
 
