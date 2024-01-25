@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import { Input } from "./ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+
 import { useTranslation } from "react-i18next";
 
 function Footer() {
