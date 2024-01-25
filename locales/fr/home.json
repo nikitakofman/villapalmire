@@ -5,9 +5,18 @@
   "turbie2": "Le village et ses alentours offrent de multiples panoramas parmi les plus beaux de la Côte d'Azur, ainsi que de nombreuses randonnées.",
   "turbie3": "La Villa Palmire se situe au coeur du village de La Turbie, à deux pas d'un complexe sportif et d'une piscine publique ouverte l'été.",
   "monaco1": "Célèbre principauté gouverner par le Prince Albert II, Monaco est connue pour ses restaurants de luxe et ses magasins chics.",
-  "monaco2": " Monaco reste un endroit unique et incontournable sur la Côte d'Azur, situé à seulement 15 minutes en voiture de la Villa Palmire.",
+  "monaco2": "Monaco reste un endroit unique et incontournable sur la Côte d'Azur, situé à seulement 15 minutes en voiture de la Villa Palmire.",
+  "riviera1": "Peu de destinations réunissent en si peu de distance des villes et des villages devenus mythiques dans le monde entier.",
+  "riviera2": "Nice, Cannes, Antibes, Grasse, Saint-Tropez, Monaco ou encore Menton et tant d’autres, composent entre mer et montagne le caractère unique de la Côte d’Azur : un mélange harmonieux de culture, d’art, de plaisirs festifs dans un décor naturel exceptionnel.",
   "rooms": "Chambres",
   "events": "Événements",
   "region": "Région",
-  "maindesc": "Située dans la ville de La Turbie, la Villa Palmire vous accueille dans un cadre de verdure et de tranquillité, à seulement 8 km de la Principauté de Monaco."
+  "maindesc": "Située dans la ville de La Turbie, la Villa Palmire vous accueille dans un cadre de verdure et de tranquillité, à seulement 8 km de la Principauté de Monaco.",
+  "book": "Réservez",
+  "created1": "Créer par",
+  "contact": "Contactez-nous",
+  "name": "Nom",
+  "email": "Email",
+  "message": "Message",
+  "sendmessage": "Envoyer"
 }

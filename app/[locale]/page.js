@@ -9,6 +9,9 @@ import SlidingPics from "@/Components/SlidingPics";
 import SlidingImages from "@/Components/SlidingImages";
 import StaticImages from "@/Components/StaticImages";
 import Regions from "@/Components/Regions";
+import Footer from "@/Components/Footer";
+import BookButton from "@/Components/BookButton";
+import Contact from "@/Components/Contact";
 
 const i18nNamespaces = ["home", "common"];
 
@@ -22,11 +25,14 @@ export default async function Home({ params: { locale } }) {
     >
       <main className="h-full main">
         <Header />
+
         <Main />
         <SlidingImages />
 
         <Rooms />
         <Regions />
+        <Contact />
+        <Footer />
       </main>
     </TranslationsProvider>
   );

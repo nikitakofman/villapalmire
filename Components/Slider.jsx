@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Sheet,
   SheetContent,
@@ -8,11 +10,19 @@ import {
 } from "./ui/sheet";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 function Slider() {
+  const [isSheetOpen, setSheetOpen] = useState(false);
+
+  // Function to close the sheet
+  const closeSheet = () => {
+    setSheetOpen(false);
+  };
+
   return (
-    <Sheet>
-      <SheetTrigger>
+    <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
+      <SheetTrigger asChild>
         <div className="flex">
           <FontAwesomeIcon icon={faBars} className="text-2xl text-gray-600" />
         </div>
@@ -30,10 +40,14 @@ function Slider() {
           <SheetDescription>
             <div className="flex   underline-animation2 flex-col sm:flex-row justify-between text-white  gap-3 items-left text-left text-2xl">
               <div className="flex gap-2 w-full flex-col justify-between">
-                <p className="p-1 w-full cursor-pointer">Rooms</p>
+                <a href="#rooms" onClick={closeSheet}>
+                  <p className="p-1 w-full cursor-pointer">Rooms</p>
+                </a>
+                <a href="#region" onClick={closeSheet}>
+                  <p className="p-1 w-full cursor-pointer">Region</p>
+                </a>
                 <p className=" p-1 w-full cursor-pointer">Events</p>
 
-                <p className=" p-1 w-full cursor-pointer">Region</p>
                 <p className=" p-1 w-full cursor-pointer">Contact</p>
               </div>
               {/* <div className="flex gap-2 w-full flex-col justify-between">

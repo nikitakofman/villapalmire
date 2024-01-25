@@ -14,7 +14,7 @@ function Header() {
   const [isNotMobile, setIsNotMobile] = useState(true);
   useEffect(() => {
     const checkIsNotMobile = () => {
-      setIsNotMobile(window.innerWidth > 900);
+      setIsNotMobile(window.innerWidth > 899);
     };
 
     checkIsNotMobile();
@@ -25,6 +25,7 @@ function Header() {
 
   return (
     <div className="fixed bg-white z-50 flex  h-16 justify-around items-center w-full">
+      <div id="#top" />
       <div className="flex w-full items-center  pl-5 md:pl-10">
         {/* <Image
           width={100}
@@ -36,25 +37,30 @@ function Header() {
           className="bg-white whitespace-nowrap tracking-widest  text-[#BB9B66] -mr-2    text-xl"
           style={{ fontFamily: "Nanum Myeongjo" }}
         >
-          VILLA PALMIRE
+          <a href="#top">VILLA PALMIRE</a>
         </div>
-        {/* <div class=" pl-5 h-[30px]">
+        <div class=" pl-10 hidden sm:flex h-[30px]">
           <button class=" h-[30px] shadow-2xl bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]">
-            <a class="font-light text-[14px] text-white" href="#">
-              {/* {isNotMobile ? "Book a room" : "Book"} 
-              Book
+            <a
+              class="font-light text-[14px] text-white"
+              href="https://www.booking.com/hotel/fr/villa-palmire.fr.html"
+              target="_blank"
+            >
+              {t("book")}
             </a>
           </button>
-        </div> */}
+        </div>
          
       </div>
-      <div className=" text-[14px] hidden min-w-[420px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-between w-full">
+      <div className=" text-[14px] hidden min-w-[340px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-around w-full">
         {/* <p className="">nav1</p> */}
         <p className="tracking-[0.5rem]">
           <a href="#rooms">{t("rooms")}</a>
         </p>
-        <p className="tracking-[0.5rem]">{t("region")}</p>
-        <p className="tracking-[0.5rem]">{t("events")}</p>
+        <p className="tracking-[0.5rem]">
+          <a href="#region">{t("region")}</a>
+        </p>
+        {/* <p className="tracking-[0.5rem]">{t("events")}</p> */}
       </div>
       <div className="w-full flex gap-3 justify-end pr-5 md:pr-10">
         {isNotMobile ? (
