@@ -13,9 +13,9 @@ function Contact() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-full md:h-[380px] py-5 border border-[#BB9B66] m-5 md:m-10 text-black">
+    <div className="h-full md:h-[380px] py-5 m-0 md:m-10  border-[0px] md:border border-[#BB9B66] text-black">
       <div className="flex flex-col md:flex-row h-full  ">
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center  justify-center">
           <div className="w-full px-5 md:px-0 md:w-9/12 flex flex-col gap-4 items-left  justify-center">
             <h1
               className="text-2xl text-gray-700"
@@ -46,8 +46,8 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full pt-5 h-full flex-col  flex items-center justify-center">
-          <div className="flex text-[16px] text-gray-700  gap-6 md:gap-14 flex-col">
+        <div className="w-full py-10 h-full flex-col  flex items-center justify-center">
+          <div className="flex text-[16px] text-gray-700  gap-10 md:gap-14 flex-col">
             <div className="flex">
               <FontAwesomeIcon
                 icon={faPhone}
@@ -67,7 +67,7 @@ function Contact() {
                 icon={faLocationPin}
                 className="size-6 text-[#BB9B66]"
               />
-              <p className="px-2">La Turbie, 06320</p>
+              <p className="px-2">La Turbie, 06320, France</p>
             </div>
           </div>
         </div>

@@ -4,15 +4,15 @@
   position: relative;
   display: flex;
   gap: 2vw;
-  padding: 2vw;
+  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
   .column {
     position: relative;
 
     height: 100%;
-    width: 25%;
-    min-width: 98px;
+    width: 100%;
+    min-width: 1px;
     display: flex;
     flex-direction: column;
     gap: 2vw;
