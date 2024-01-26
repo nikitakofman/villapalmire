@@ -18,16 +18,22 @@ function Loading() {
     <div>
       {" "}
       {isLoading && (
-        <div class="fixed top-0 left-0 w-full h-full bg-white  flex justify-center items-center z-50">
+        <div class="fixed top-0  left-0 w-full h-full bg-white  flex justify-center items-center z-50">
           {/* Your loading screen content, e.g., a spinner */}
-          <div className="container flex items-center justify-center gap-3 flex-col">
+          <div className="container  flex items-center justify-center gap-5 flex-col">
             <Image
               alt="Villa Palmire Logo"
               width={35}
               height={35}
               src="/logovp.png"
-              className="size-20 mb-10"
+              className="size-20 "
             />
+            <div
+              className="bg-white  whitespace-nowrap tracking-widest   text-[#BB9B66] -mr-2    text-xl"
+              style={{ fontFamily: "Nanum Myeongjo" }}
+            >
+              VILLA PALMIRE
+            </div>
             <div className="Loading"></div>
           </div>
         </div>

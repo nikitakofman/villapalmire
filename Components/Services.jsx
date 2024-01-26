@@ -14,8 +14,8 @@ function Services() {
       >
         <div className="h-full w-full mr-3 ">
           <div className="flex w-full h-full flex-col border-[0px] pt-3   border-[#BB9B66]">
-            <div className="w-full h-[100px] md:min-h-[200px] rounded-xl shadow-xl shadow-xl eventsbg"></div>
-            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-3 justify-start ">
+            <div className="w-full h-[100px] md:min-h-[200px] rounded-xl shadow-xl  eventsbg"></div>
+            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-0 pb-3 md:pb-0 md:px-3 justify-start ">
               <div className="flex items-center pt-5 justify-between">
                 {" "}
                 <h1
@@ -39,7 +39,7 @@ function Services() {
         <div className="h-full w-full mr-3 ">
           <div className="flex w-full h-full flex-col border-[0px] pt-3   border-[#BB9B66]">
             <div className="w-full  h-[100px] md:min-h-[200px] rounded-xl shadow-xl breakfastbg"></div>
-            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-3 justify-start ">
+            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-0 pb-3 md:pb-0 md:px-3 justify-start ">
               <div className="flex items-center pt-5 justify-between">
                 {" "}
                 <h1
@@ -68,7 +68,7 @@ function Services() {
         <div className="h-full w-full mr-3  ">
           <div className="flex w-full h-full flex-col border-[0px] pt-3   border-[#BB9B66]">
             <div className="w-full  h-[100px] md:min-h-[200px] rounded-xl shadow-xl chauffeurbg"></div>
-            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-3 justify-start ">
+            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-0 pb-3 md:pb-0 md:px-3 justify-start ">
               <div className="flex items-center pt-5 justify-between">
                 {" "}
                 <h1
@@ -96,7 +96,7 @@ function Services() {
         <div className="h-full w-full  ">
           <div className="flex w-full h-full flex-col border-[0px] pt-3   border-[#BB9B66]">
             <div className="w-full h-[100px] md:min-h-[200px] rounded-xl shadow-xl laundrybg"></div>
-            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-3 justify-start ">
+            <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-0 pb-3 md:pb-0 md:px-3 justify-start ">
               <div className="flex items-center pt-5 justify-between">
                 {" "}
                 <h1
