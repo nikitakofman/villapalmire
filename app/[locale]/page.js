@@ -13,6 +13,7 @@ import Footer from "@/Components/Footer";
 import BookButton from "@/Components/BookButton";
 import Contact from "@/Components/Contact";
 import Services from "@/Components/Services";
+import Loading from "@/Components/Loading";
 
 const i18nNamespaces = ["home", "common"];
 
@@ -24,15 +25,16 @@ export default async function Home({ params: { locale } }) {
       locale={locale}
       namespaces={i18nNamespaces}
     >
+      <Loading />
       <main className="h-full main">
         <Header />
 
         <Main />
         <SlidingImages />
-
+        <Regions />
         <Rooms />
         <Services />
-        <Regions />
+
         <Contact />
         <Footer />
       </main>

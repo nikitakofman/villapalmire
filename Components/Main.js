@@ -26,8 +26,8 @@ function Main() {
         <div className="h-full terracebg m-0.5 w-full md:w-full ">
           {/* <div className=" md:flex flex-col hidden justify-start text-right h-full">
             <div
-              className="bg-white  tracking-[0.3em]  text-[#BB9B66] -mr-2    text-5xl"
-              style={{ fontFamily: "Nanum Myeongjo" }}
+              className="bg-white  tracking-[0.3em]  text-[#BB9B66] text-[14px] -mr-2    text-5xl"
+              style={{ fontFamily: "Open Sans" }}
             >
               VILLA PALMIRE
             </div>
@@ -36,8 +36,8 @@ function Main() {
             <div className="  mt-12 ">
               {" "}
               <div
-                className="text-right w-[280px] text-[#BB9B66] p-1  text-5xl"
-                style={{ fontFamily: "Nanum Myeongjo" }}
+                className="text-right w-[280px] text-[#BB9B66] text-[14px] p-1  text-5xl"
+                style={{ fontFamily: "Open Sans" }}
               >
                 VILLA<br></br> PALMIRE
               </div>
@@ -45,8 +45,8 @@ function Main() {
           </div> */}
           {/* <div className=" md:hidden flex-col flex justify-start  border-8 w-8/12  h-full">
             <div
-              className="bg-white w-full  text-[#BB9B66]  p-3 -mt-3  text-7xl"
-              style={{ fontFamily: "Nanum Myeongjo" }}
+              className="bg-white w-full  text-[#BB9B66] text-[14px]  p-3 -mt-3  text-7xl"
+              style={{ fontFamily: "Open Sans" }}
             >
               VILLA
             </div>
@@ -63,8 +63,8 @@ function Main() {
         <div className="h-full  greenterracebg m-0.5 w-full flex md:flex-none justify-start md:justify-end items-end  flex-col md:w-4/12 ">
           <div className=" hidden md:flex flex-col justify-end items-end w-full  h-full">
             <div
-              className="bg-white     justify-end  flex p-2 -mb-3.5 text-[#BB9B66]  "
-              style={{ fontFamily: "Nanum Myeongjo" }}
+              className="bg-white     justify-end  flex p-2 -mb-3.5 text-[#BB9B66] text-[14px]  "
+              style={{ fontFamily: "Open Sans" }}
             >
               {t("maindesc")}
             </div>
@@ -72,8 +72,8 @@ function Main() {
           <div className=" flex flex-col   md:hidden  w-full  bg-white ">
             {" "}
             <div
-              className="w-full h-full py-4 text-justify  text-[#BB9B66] p-1 "
-              style={{ fontFamily: "Nanum Myeongjo" }}
+              className="w-full h-full py-2 text-justify  text-[#BB9B66] text-[14px]  "
+              style={{ fontFamily: "Open Sans" }}
             >
               {t("maindesc")}
             </div>

@@ -60,7 +60,7 @@ function Contact() {
                 icon={faEnvelope}
                 className="size-6 text-[#BB9B66]"
               />
-              <p className="px-2">palmirenews.3000@gmail.com</p>
+              <p className="px-2">palmire.news3000@gmail.com</p>
             </div>
             <div className="flex w-full">
               <FontAwesomeIcon

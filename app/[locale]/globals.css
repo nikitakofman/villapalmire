@@ -279,3 +279,72 @@ body {
   background-color: #bc9d68; /* or your preferred underline color */
   animation: underline-grow 1s ease-in-out forwards; /* Adjust timing to your liking */
 }
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 280px auto;
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.Loading {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.Loading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  animation: load 2s infinite;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+    background: #ffffff;
+  }
+
+  50% {
+    width: 60%;
+    background: #bb9b66;
+  }
+
+  100% {
+    width: 100%;
+    background: #bb9b66;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: #bb9b66;
+  }
+
+  25% {
+    background: #a0d2eb;
+  }
+
+  50% {
+    background: #ffa8b6;
+  }
+
+  75% {
+    background: #d0bdf4;
+  }
+
+  100% {
+    background: #494d5f;
+  }
+}

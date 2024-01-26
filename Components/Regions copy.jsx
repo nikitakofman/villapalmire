@@ -91,7 +91,7 @@ export default function Regions() {
           <div className="w-full monaco md:min-h-full hidden md:flex"></div>
         </div>
         <div className="flex flex-col md:flex-row  h-full">
-          <div className="w-full hidden md:flex cote" />
+          <div className="w-full hidden md:flex md:min-h-[200px] cote" />
           <div className="w-full flex md:hidden flex-col justify-end h-[200px] cote">
             <h1
               ref={ref3}
@@ -129,7 +129,7 @@ export default function Regions() {
 
 export function MaskText() {
   const { t } = useTranslation();
-  const phrases = [t("turbie3")];
+  const phrases = [t("turbie1"), t("turbie3")];
 
   const animation = {
     initial: { y: "100%" },
@@ -170,7 +170,7 @@ export function MaskText() {
 
 export function MaskText2() {
   const { t } = useTranslation();
-  const phrases = [t("monaco2")];
+  const phrases = [t("monaco1"), t("monaco2")];
 
   const animation = {
     initial: { y: "100%" },
@@ -211,7 +211,7 @@ export function MaskText2() {
 
 export function MaskText3() {
   const { t } = useTranslation();
-  const phrases = [t("riviera2")];
+  const phrases = [t("riviera1"), t("riviera2")];
 
   const animation = {
     initial: { y: "100%" },

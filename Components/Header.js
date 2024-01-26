@@ -24,23 +24,25 @@ function Header() {
   }, []);
 
   return (
-    <div className="fixed bg-white z-50 flex  h-16 justify-around items-center w-full">
+    <div className="fixed bg-white z-20 flex  h-16  justify-around items-center w-full">
       <div id="#top" />
-      <div className="flex w-full items-center  pl-5 md:pl-10">
-        {/* <Image
-          width={100}
-          height={100}
-          alt="Villa Palmire Logo"
-          src="/logo.png"
-        /> */}
+      <div className="flex w-full items-center justify-between   pl-5 md:pl-10">
         <div
-          className="bg-white whitespace-nowrap tracking-widest  text-[#BB9B66] -mr-2    text-xl"
+          className="bg-white whitespace-nowrap tracking-widest   text-[#BB9B66] -mr-2    text-xl"
           style={{ fontFamily: "Nanum Myeongjo" }}
         >
-          <a href="#top">VILLA PALMIRE</a>
+          <a href="#top">
+            <Image
+              alt="Villa Palmire Logo"
+              width={35}
+              height={35}
+              src="/logovp.png"
+              className="size-7"
+            />
+          </a>
         </div>
-        <div class=" pl-10 hidden sm:flex h-[30px]">
-          <button class=" h-[30px] shadow-2xl bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]">
+        <div class=" flex w-full -mr-28 h-[30px]">
+          <button class=" h-[30px] shadow-2xl  bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]">
             <a
               class="font-light text-[14px] text-white"
               href="https://www.booking.com/hotel/fr/villa-palmire.fr.html"
@@ -62,7 +64,7 @@ function Header() {
         </p>
         {/* <p className="tracking-[0.5rem]">{t("events")}</p> */}
       </div>
-      <div className="w-full flex gap-3 justify-end pr-5 md:pr-10">
+      <div className=" w-0 md:w-full flex gap-3 justify-end pr-5 md:pr-10">
         {isNotMobile ? (
           <LanguageChanger />
         ) : (
