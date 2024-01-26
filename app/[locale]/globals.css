@@ -43,6 +43,36 @@ body {
   background-position: center;
 }
 
+.chauffeurbg {
+  background-image: url("/chauffeur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.breakfastbg {
+  background-image: url("/breakfast.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.laundrybg {
+  background-image: url("/laundry.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.eventsbg {
+  background-image: url("/events.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dogsbg {
+  background-image: url("/dogs.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* BACKGROUNDS */
 
 .underline-animation p {

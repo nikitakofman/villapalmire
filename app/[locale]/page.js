@@ -12,6 +12,7 @@ import Regions from "@/Components/Regions";
 import Footer from "@/Components/Footer";
 import BookButton from "@/Components/BookButton";
 import Contact from "@/Components/Contact";
+import Services from "@/Components/Services";
 
 const i18nNamespaces = ["home", "common"];
 
@@ -30,6 +31,7 @@ export default async function Home({ params: { locale } }) {
         <SlidingImages />
 
         <Rooms />
+        <Services />
         <Regions />
         <Contact />
         <Footer />

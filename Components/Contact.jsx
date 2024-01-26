@@ -62,7 +62,7 @@ function Contact() {
               />
               <p className="px-2">palmirenews.3000@gmail.com</p>
             </div>
-            <div className="flex">
+            <div className="flex w-full">
               <FontAwesomeIcon
                 icon={faLocationPin}
                 className="size-6 text-[#BB9B66]"

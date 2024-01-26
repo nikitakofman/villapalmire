@@ -91,7 +91,7 @@ export default function Regions() {
           <div className="w-full monaco md:min-h-full hidden md:flex"></div>
         </div>
         <div className="flex flex-col md:flex-row  h-full">
-          <div className="w-full hidden md:flex md:min-h-full cote" />
+          <div className="w-full hidden md:flex md:min-h-[200px] cote" />
           <div className="w-full flex md:hidden flex-col justify-end h-[200px] cote">
             <h1
               ref={ref3}
