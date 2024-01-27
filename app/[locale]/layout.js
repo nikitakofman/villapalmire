@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Villa Palmire - Elegant Guest House in La Turbie, France",
   description:
-    "Experience the charm of the French Riviera at Villa Palmire, an exquisite guest house nestled in the picturesque village of La Turbie. Enjoy luxurious amenities, breathtaking views, and a tranquil escape.",
+    "Experience the charm of the French Riviera at Villa Palmire, an exquisite guest house nestled in the village of La Turbie. Enjoy luxurious amenities, breathtaking views, and a tranquil escape.",
   openGraph: {
     title: "Villa Palmire - Elegant Guest House in La Turbie, France",
     description:
@@ -19,7 +19,6 @@ export const metadata = {
         height: 600,
         alt: "Villa Palmire Home Page",
       },
-      // Consider adding more images showcasing different aspects of the guest house
     ],
     siteName: "Villa Palmire - Luxurious Stay in La Turbie",
   },

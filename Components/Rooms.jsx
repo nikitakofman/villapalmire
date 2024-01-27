@@ -1,19 +1,28 @@
+"use client";
+
 import React from "react";
 import Main from "./Main";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 export default function Rooms() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
     <>
       <div id="rooms" />
-      <div className="h-svh">
+      <div
+        ref={ref}
+        className={`h-svh transition-opacity duration-700 ${
+          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="p-5 md:p-10 gap-2 h-full flex-col md:flex-row flex items-center justify-center">
-          {/* <Image src="/ch1.jpg" alt="Chambre 1" width={300} height={300} />
-          <Image src="/ch2.jpg" alt="Chambre 2" width={300} height={300} />
-          <Image src="/ch3.jpeg" alt="Chambre 2" width={300} height={300} /> */}
-
           <div className="chambre1bg w-full h-full flex flex-col items-left justify-end">
-            {/* <div className=" m-3 border-2 border-[#BB9B66] p-3 bg-black/40 text-white">
+            {/* <div className=" m-3 border-2 border-[#BB9B66] top-[300px] p-3 bg-black/40 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus, aut! Consequatur, laborum commodi nam pariatur
               voluptate

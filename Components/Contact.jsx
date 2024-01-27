@@ -102,10 +102,10 @@ function Contact() {
                 className="w-full bg-white text-black"
                 placeholder={t("message")}
               />
-              <div class="h-[30px]">
+              <div className="h-[30px]">
                 <button
                   type="submit"
-                  class=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
+                  className=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
                 >
                   {t("sendmessage")}
                 </button>

@@ -6,15 +6,24 @@ import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 import { faCar } from "@fortawesome/free-solid-svg-icons";
 import { faJugDetergent } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 
 function Services() {
   const { t } = useTranslation();
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   return (
     <>
       {/* <h1 className="px-10 text-3xl -mb-8 w-full">Our services</h1> */}
       <div
-        className="h-full  ml-5 mr-5 md:ml-10 md:mr-10  flex flex-col md:flex-row text-black"
+        ref={ref}
+        className={`h-full ml-5 mr-5 md:ml-10 md:mr-10 flex flex-col md:flex-row text-black transition-opacity duration-700 ${
+          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
         style={{ fontFamily: "Open Sans" }}
       >
         <div className="h-full w-full mr-3 ">

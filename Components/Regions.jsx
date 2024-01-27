@@ -30,7 +30,7 @@ export default function Regions() {
   return (
     <>
       {" "}
-      <span id="region" class="anchor-offset" />
+      <span id="region" className="anchor-offset" />
       <div className="flex items-center p-5 md:m-10 md:border border-[#BC9D68] justify-center">
         <div className="h-full  w-full">
           <div className="flex h-full flex-col ">
@@ -64,18 +64,18 @@ export default function Regions() {
                   </div>
                   <div className="w-full flex justify-end pt-5 md:pt-0">
                     <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
+                      className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
                       onClick={() =>
                         window.open(
                           "https://www.menton-riviera-merveilles.co.uk/menton-and-its-coastline/the-riviera-and-its-hilltop-villages/la-turbie/"
                         )
                       }
                     >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
+                      <span className="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
                         {t("laturbieevents")}
                       </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
                     </button>
                   </div>
                 </div>
@@ -109,18 +109,18 @@ export default function Regions() {
                   </div>
                   <div className="w-full flex justify-end pt-5 md:pt-0">
                     <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
+                      className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
                       onClick={() =>
                         window.open(
                           "https://www.visitmonaco.com/en/22107/tout-ce-qu-il-se-passe-a-monaco"
                         )
                       }
                     >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
+                      <span className="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
                         {t("monacoevents")}
                       </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
                     </button>
                   </div>
                 </div>
@@ -158,18 +158,18 @@ export default function Regions() {
                   </div>
                   <div className="w-full flex justify-end pt-5 md:pt-0 ">
                     <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
+                      className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
                       onClick={() =>
                         window.open(
                           "https://cotedazurfrance.fr/decouvrir/grands-evenements/"
                         )
                       }
                     >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
+                      <span className="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
                         {t("rivieraevents")}
                       </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -left-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                      <span className="absolute w-full h-full bg-[#BC9D68] -right-44 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
                     </button>
                   </div>
                 </div>

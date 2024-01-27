@@ -14,7 +14,7 @@ function Main() {
         <div className="relative h-full m-0.5 w-full md:w-full">
           <Image
             src="/terrace.webp"
-            layout="fill"
+            fill
             style={{ objectFit: "cover" }}
             alt="Terrace"
             priority
@@ -26,7 +26,7 @@ function Main() {
         <div className="relative h-full m-0.5 flex justify-end w-full">
           <Image
             src="/villamain.webp"
-            layout="fill"
+            fill
             style={{ objectFit: "cover" }}
             alt="Villa"
             priority
@@ -38,7 +38,7 @@ function Main() {
         <div className="relative h-full m-0.5 w-full flex md:flex-none justify-start md:justify-end items-end flex-col md:w-4/12">
           <Image
             src="/greenterrace.webp"
-            layout="fill"
+            fill
             style={{ objectFit: "cover" }}
             alt="Green Terrace"
             priority
