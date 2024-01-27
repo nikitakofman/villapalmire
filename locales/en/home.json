@@ -29,5 +29,11 @@
   "email": "Email",
   "message": "Message",
   "sendmessage": "Send",
-  "messagetoast": "Message sent successfully"
+  "messagetoast": "Message sent successfully",
+  "laturbieevents": "La Turbie Events",
+  "monacoevents": "Monaco Events",
+  "rivieraevents": "Riviera Events",
+  "turbietitle": "La Turbie",
+  "monacotitle": "Monaco",
+  "rivieratitle": "Riviera"
 }

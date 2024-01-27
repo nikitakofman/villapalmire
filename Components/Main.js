@@ -15,7 +15,7 @@ function Main() {
           <Image
             src="/terrace.webp"
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt="Terrace"
             priority
           />
@@ -27,7 +27,7 @@ function Main() {
           <Image
             src="/villamain.webp"
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt="Villa"
             priority
           />
@@ -39,7 +39,7 @@ function Main() {
           <Image
             src="/greenterrace.webp"
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt="Green Terrace"
             priority
           />

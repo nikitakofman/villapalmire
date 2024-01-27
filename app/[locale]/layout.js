@@ -4,21 +4,24 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Villa Palmire - guest house in La Turbie",
-  description: "Villa Palmire is a guest house in La Turbie, France.",
+  title: "Villa Palmire - Elegant Guest House in La Turbie, France",
+  description:
+    "Experience the charm of the French Riviera at Villa Palmire, an exquisite guest house nestled in the picturesque village of La Turbie. Enjoy luxurious amenities, breathtaking views, and a tranquil escape.",
   openGraph: {
-    title: "Villa Palmire",
-    description: "Villa Palmire is a guest house in La Turbie, France.",
+    title: "Villa Palmire - Elegant Guest House in La Turbie, France",
+    description:
+      "Discover Villa Palmire in La Turbie, France. Our guest house offers a serene retreat with stunning views, elegant rooms, and easy access to Monaco and the Riviera.",
     url: "https://www.villadepalmire.com",
     images: [
       {
-        url: "https://www.villadepalmire.com/vpweb.png",
+        url: "https://www.villadepalmire.com/vpweb.webp",
         width: 800,
         height: 600,
-        alt: "Home page",
+        alt: "Villa Palmire Home Page",
       },
+      // Consider adding more images showcasing different aspects of the guest house
     ],
-    siteName: "Nikita Kofman's Portfolio",
+    siteName: "Villa Palmire - Luxurious Stay in La Turbie",
   },
 };
 

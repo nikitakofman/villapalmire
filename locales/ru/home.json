@@ -29,5 +29,11 @@
   "email": "Почта",
   "message": "Сообщение",
   "sendmessage": "Отправить",
-  "messagetoast": "Сообщение успешно отправлено"
+  "messagetoast": "Сообщение успешно отправлено",
+  "laturbieevents": "События Ла Тюрби",
+  "monacoevents": "События Монако",
+  "rivieraevents": "События Ривьеры",
+  "turbietitle": "Ла Тюрби",
+  "monacotitle": "Монако",
+  "rivieratitle": "Ривьера"
 }

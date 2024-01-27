@@ -29,5 +29,11 @@
   "email": "Email",
   "message": "Message",
   "sendmessage": "Envoyer",
-  "messagetoast": "Message envoyé avec succès"
+  "messagetoast": "Message envoyé avec succès",
+  "laturbieevents": "Événements à La Turbie",
+  "monacoevents": "Événements à Monaco",
+  "rivieraevents": "Événements sur la Riviera",
+  "turbietitle": "La Turbie",
+  "monacotitle": "Monaco",
+  "rivieratitle": "Riviera"
 }
