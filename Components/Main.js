@@ -43,7 +43,7 @@ function Main() {
             alt="Green Terrace"
             priority
           />
-          <div className="absolute bottom-0 right-0 p-2 bg-white text-[#BB9B66] text-[14px]">
+          <div className="absolute bottom-0 right-0 p-2 bg-white text-[#BB9B66] text-[15px]">
             {t("maindesc")}
           </div>
         </div>

@@ -33,7 +33,7 @@ export default function Regions() {
         <div className="h-full  w-full">
           <div className="flex h-full flex-col ">
             <div className="flex flex-col  md:flex-row">
-              <div className="w-full hidden md:flex   md:min-h-[300px]  turbie" />
+              <div className="w-full hidden md:flex   md:h-[300px]  turbie" />
               <div className="w-full  flex md:hidden flex-col justify-end  h-[200px] turbie">
                 <h1
                   ref={ref2}
@@ -45,8 +45,8 @@ export default function Regions() {
                   La Turbie
                 </h1>
               </div>
-              <div className="w-full flex flex-col items-center justify-center bg-white">
-                <div className="py-3 p-0 md:p-5 flex flex-col justify-between h-full w-full">
+              <div className="w-full h-full flex flex-col items-center justify-center bg-white">
+                <div className="py-3 p-0 md:p-5 w-full">
                   <h1
                     ref={ref1}
                     className={`text-left hidden md:flex flex-col tracking-widest text-[#BC9D68] font-bold w-full pl-0  my-3 -mt-0 md:-mt-5 text-3xl ${
@@ -59,22 +59,6 @@ export default function Regions() {
                   <div className="pl-0.5  md:pl-0">
                     {" "}
                     <MaskText />
-                  </div>
-                  <div className="w-full flex justify-end pt-5 md:pt-0">
-                    <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
-                      onClick={() =>
-                        window.open(
-                          "https://www.menton-riviera-merveilles.co.uk/menton-and-its-coastline/the-riviera-and-its-hilltop-villages/la-turbie/"
-                        )
-                      }
-                    >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
-                        La Turbie Events
-                      </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -91,8 +75,8 @@ export default function Regions() {
                   Monaco
                 </h1>
               </div>
-              <div className="w-full flex items-center justify-center bg-white">
-                <div className="py-3 flex flex-col h-full justify-between  w-full pr-4 ">
+              <div className="w-full h-full flex items-center justify-center bg-white">
+                <div className="py-3 flex flex-col w-full pr-4 ">
                   <h1
                     ref={ref2}
                     className={`text-left hidden md:flex flex-col tracking-widest text-[#BC9D68] font-bold w-full pl-0  my-0  text-3xl ${
@@ -105,28 +89,12 @@ export default function Regions() {
                   <div className="py-0 pl-0.5 md:pl-0 md:py-3 ">
                     <MaskText2 />
                   </div>
-                  <div className="w-full flex justify-end pt-5 md:pt-0">
-                    <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
-                      onClick={() =>
-                        window.open(
-                          "https://www.visitmonaco.com/en/22107/tout-ce-qu-il-se-passe-a-monaco"
-                        )
-                      }
-                    >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
-                        Monaco Events
-                      </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-                    </button>
-                  </div>
                 </div>
               </div>
-              <div className="w-full monaco  md:min-h-[300px] hidden md:flex"></div>
+              <div className="w-full monaco  md:h-[300px] hidden md:flex"></div>
             </div>
             <div className="flex flex-col md:flex-row  h-full">
-              <div className="w-full hidden md:flex  md:min-h-[300px] cote" />
+              <div className="w-full hidden md:flex  md:h-[300px] cote" />
               <div className="w-full flex md:hidden flex-col justify-end h-[200px] cote">
                 <h1
                   ref={ref3}
@@ -139,8 +107,8 @@ export default function Regions() {
                 </h1>
               </div>
 
-              <div className="w-full  flex items-center flex-col justify-center bg-white">
-                <div className="py-3 p-0 md:p-5 flex flex-col justify-between h-full w-full">
+              <div className="w-full h-full flex items-center flex-col justify-center bg-white">
+                <div className="py-3 p-0 md:p-5">
                   <h1
                     ref={ref3}
                     className={`text-left tracking-widest flex-col hidden md:flex text-[#BC9D68] font-bold w-full pl-0  my-3 -mt-0  text-3xl ${
@@ -153,22 +121,6 @@ export default function Regions() {
                   <div className="pl-0.5  md:pl-0">
                     {" "}
                     <MaskText3 />
-                  </div>
-                  <div className="w-full flex justify-end pt-5 md:pt-0 ">
-                    <button
-                      class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
-                      onClick={() =>
-                        window.open(
-                          "https://cotedazurfrance.fr/decouvrir/grands-evenements/"
-                        )
-                      }
-                    >
-                      <span class="relative z-10 text-[#BC9D68] group-hover:text-white text-[15px] duration-500">
-                        Riviera Events
-                      </span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -left-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                      <span class="absolute w-full h-full bg-[#BC9D68] -right-36 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-                    </button>
                   </div>
                 </div>
               </div>

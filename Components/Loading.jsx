@@ -26,7 +26,8 @@ function Loading() {
               width={35}
               height={35}
               src="/logovp.webp"
-              className="size-20 "
+              className="size-20"
+              priority
             />
             <div
               className="bg-white  whitespace-nowrap tracking-widest   text-[#BB9B66] -mr-2    text-xl"
