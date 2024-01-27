@@ -118,6 +118,46 @@ function Contact() {
               <p className="px-2">La Turbie, 06320, France</p>
             </div>
           </div>
+          <form
+            onSubmit={handleOnSubmit}
+            className=" text-slate-300 flex flex-col "
+          >
+            <div className="mb-2">
+              <input
+                type="email"
+                id="user_email"
+                name="user_email"
+                placeholder="E-mail…"
+                required
+                className="h-14 w-7/12 sm:w-3/12 text-lg mt-1 mb-1 bg-[#0F172B] text-slate-200 border-2 border-slate-600 hover:border-slate-300 ease-in-out duration-200 rounded-lg pl-5 outline-neutral-300 "
+                // style={{ cursor: "none" }}
+              />
+            </div>
+            <div className="mb-2">
+              <input
+                type="text"
+                id="user_name"
+                name="user_name"
+                required
+                className="h-14 w-7/12 sm:w-3/12 text-lg mt-1 mb-1 bg-[#0F172B] text-slate-200 border-2 border-slate-600 rounded-lg pl-5  hover:border-slate-300 ease-in-out duration-200 outline-neutral-300 "
+                // style={{ cursor: "none" }}
+              />
+            </div>
+            <div className="mb-2">
+              <textarea
+                id="user_message"
+                name="user_message"
+                placeholder="Message…"
+                required
+                className="h-40 w-full  text-lg mt-1 mb-1 bg-[#0F172B] text-slate-200 border-2 border-slate-600 rounded-lg pl-5 pt-5 hover:border-slate-300 ease-in-out duration-200 outline-neutral-300 "
+                // style={{ cursor: "none" }}
+              />
+            </div>
+            <button
+              type="submit"
+              className="sm:w-2/12 w-4/12 h-10 mb-10 border-2 border-slate-400 bg-slate-600 x text-slate-100 hover:border-slate-300 ease-in-out duration-200 rounded-lg "
+            ></button>
+          </form>
         </div>
       </div>
     </div>
