@@ -9,7 +9,16 @@
   "riviera1": "Peu de destinations réunissent en si peu de distance des villes et des villages devenus mythiques dans le monde entier.",
   "riviera2": "Nice, Cannes, Antibes, Grasse, Saint-Tropez, Monaco ou encore Menton et tant d’autres, composent entre mer et montagne le caractère unique de la Côte d’Azur : un mélange harmonieux de culture, d’art, de plaisirs festifs dans un décor naturel exceptionnel.",
   "rooms": "Chambres",
-  "events": "Événements",
+  "events": "Evénements",
+  "breakfast": "Petit-déjeuner",
+  "taxi": "Chauffeur",
+  "dogs": "Chiens",
+  "eventsdesc": "La Villa Palmire peut être réservée pour des événements privés, dîners, anniversaires et plus encore.",
+  "breakfastdesc": "Notre petit-déjeuner quotidien propose des pâtisseries, du jus d'orange, du café et du thé.",
+  "breakfastdescmini": "Options sans gluten et véganes disponibles",
+  "chauffeurdesc": "Nous proposons un service de taxi entre La Turbie et Monaco.",
+  "chauffeurdescmini": "Des destinations personnalisées sont possibles sur demande",
+  "dogsdesc": "Villa Palmire est un établissement accueillant les chiens.",
   "region": "Région",
   "maindesc": "Située dans la ville de La Turbie, la Villa Palmire vous accueille dans un cadre de verdure et de tranquillité, à seulement 8 km de la Principauté de Monaco.",
   "book": "Réservez",
@@ -18,5 +27,6 @@
   "name": "Nom",
   "email": "Email",
   "message": "Message",
-  "sendmessage": "Envoyer"
+  "sendmessage": "Envoyer",
+  "messagetoast": "Message envoyé avec succès"
 }

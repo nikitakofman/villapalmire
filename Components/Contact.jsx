@@ -9,6 +9,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const { t } = useTranslation();
@@ -17,9 +19,18 @@ function Contact() {
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
-  console.log(SERVICE_ID);
-  console.log(TEMPLATE_ID);
-  console.log(PUBLIC_KEY);
+  const handleTest = () => {
+    toast.success(`${t("messagetoast")}`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
@@ -27,19 +38,16 @@ function Contact() {
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
-        // toast.success(
-        //   `${language.en ? "Message sent successfully" : "Message envoyé"}`,
-        //   {
-        //     position: "top-right",
-        //     autoClose: 5000,
-        //     hideProgressBar: false,
-        //     closeOnClick: true,
-        //     pauseOnHover: true,
-        //     draggable: true,
-        //     progress: undefined,
-        //     theme: "light",
-        //   }
-        // );
+        toast.success(`${t("messagetoast")}`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
         console.log(result);
       });
 
@@ -48,6 +56,14 @@ function Contact() {
 
   return (
     <div className="h-full md:h-[380px] py-5 m-0 md:m-10  border-[0px] md:border border-[#BB9B66] text-black">
+      <ToastContainer
+        toastStyle={{
+          backgroundColor: "white",
+          color: "black",
+          border: "red",
+        }}
+        progressStyle={{ backgroundColor: "#BB9B66" }}
+      />
       <div className="flex flex-col md:flex-row h-full  ">
         <div className="w-full h-full flex items-center  justify-center">
           <div className="w-full px-5 md:px-0 md:w-9/12 flex flex-col gap-4 items-left  justify-center">
@@ -57,11 +73,13 @@ function Contact() {
             >
               {t("contact")}
             </h1>
+            {/* <button onClick={handleTest}>bruh</button> */}
             <form
               onSubmit={handleOnSubmit}
-              className=" text-slate-300 flex flex-col "
+              className=" text-slate-300 gap-3 flex flex-col "
             >
               <Input
+                required
                 type="text"
                 id="user_name"
                 name="user_name"
@@ -69,6 +87,7 @@ function Contact() {
                 className="bg-white text-black w-6/12"
               />
               <Input
+                required
                 type="email"
                 id="user_email"
                 name="user_email"
@@ -76,6 +95,7 @@ function Contact() {
                 className="bg-white text-black w-6/12"
               />
               <Textarea
+                required
                 id="user_message"
                 name="user_message"
                 className="w-full bg-white text-black"
@@ -115,7 +135,7 @@ function Contact() {
                 icon={faLocationPin}
                 className="size-6 text-[#BB9B66]"
               />
-              <p className="px-2">La Turbie, 06320, France</p>
+              <p className="px-2">La Turbie, France</p>
             </div>
           </div>
         </div>

@@ -20,55 +20,55 @@ body {
 }
 
 .villabg1 {
-  background-image: url("/villamain.jpg");
+  background-image: url("/villamain.webp");
   background-size: cover;
   background-position: center;
 }
 
 .terracebg {
-  background-image: url("/terrace.jpg");
+  background-image: url("/terrace.webp");
   background-size: cover;
   background-position: center;
 }
 
 .vuebg {
-  background-image: url("/vue.jpg");
+  background-image: url("/vue.webp");
   background-size: cover;
   background-position: left;
 }
 
 .greenterracebg {
-  background-image: url("/greenterrace.jpeg");
+  background-image: url("/greenterrace.webp");
   background-size: cover;
   background-position: center;
 }
 
 .chauffeurbg {
-  background-image: url("/chauffeur.jpg");
+  background-image: url("/chauffeur.webp");
   background-size: cover;
   background-position: center;
 }
 
 .breakfastbg {
-  background-image: url("/breakfast.jpg");
+  background-image: url("/breakfast.webp");
   background-size: cover;
   background-position: center;
 }
 
 .laundrybg {
-  background-image: url("/laundry.jpg");
+  background-image: url("/laundry.webp");
   background-size: cover;
   background-position: center;
 }
 
 .eventsbg {
-  background-image: url("/events.jpg");
+  background-image: url("/events.webp");
   background-size: cover;
   background-position: center;
 }
 
 .dogsbg {
-  background-image: url("/dogs.jpg");
+  background-image: url("/dogs.webp");
   background-size: cover;
   background-position: center;
 }
@@ -227,19 +227,19 @@ body {
 }
 
 .chambre1bg {
-  background-image: url("/ch1.jpg");
+  background-image: url("/ch1.webp");
   background-size: cover;
   background-position: center;
 }
 
 .chambre2bg {
-  background-image: url("/ch2.jpg");
+  background-image: url("/ch2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .chambre3bg {
-  background-image: url("/ch3.jpeg");
+  background-image: url("/ch3.webp");
   background-size: cover;
   background-position: center;
 }
@@ -347,4 +347,9 @@ body {
   100% {
     background: #494d5f;
   }
+}
+
+.customtoast {
+  background-color: #ffffff; /* Replace with your desired color */
+  color: black; /* Optional: if you want to change text color */
 }

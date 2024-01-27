@@ -1,10 +1,15 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 import { faCar } from "@fortawesome/free-solid-svg-icons";
 import { faJugDetergent } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* <h1 className="px-10 text-3xl -mb-8 w-full">Our services</h1> */}
@@ -22,17 +27,14 @@ function Services() {
                   style={{ fontFamily: "Nanum Myeongjo" }}
                   className="text-[#BB9B66]  text-3xl"
                 >
-                  Events
+                  {t("events")}
                 </h1>
                 <FontAwesomeIcon
                   icon={faCalendar}
                   className="text-[#BB9B66]  text-xl"
                 />
               </div>
-              <p>
-                Villa Palmire can be booked for private events, dinners,
-                birthdays and more.
-              </p>
+              <p>{t("eventsdesc")}</p>
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@ function Services() {
                   style={{ fontFamily: "Nanum Myeongjo" }}
                   className="text-[#BB9B66] text-3xl"
                 >
-                  Breakfast
+                  {t("breakfast")}
                 </h1>
                 <FontAwesomeIcon
                   icon={faMugSaucer}
@@ -54,14 +56,9 @@ function Services() {
                 />
               </div>
 
-              <p>
-                Our daily breakfast offers pastries, orange juice, coffee and
-                tea.
-              </p>
+              <p>{t("breakfastdesc")}</p>
 
-              <p className="text-[13px] italic">
-                No gluten and vegan options available
-              </p>
+              <p className="text-[13px] italic">{t("breakfastdescmini")}</p>
             </div>
           </div>
         </div>
@@ -75,7 +72,7 @@ function Services() {
                   style={{ fontFamily: "Nanum Myeongjo" }}
                   className="text-[#BB9B66] text-3xl"
                 >
-                  Chauffeur
+                  {t("taxi")}
                 </h1>
                 <FontAwesomeIcon
                   icon={faCar}
@@ -83,10 +80,8 @@ function Services() {
                 />
               </div>
 
-              <p>We offer a taxi service between La Turbie and Monaco.</p>
-              <p className="text-[13px] italic">
-                Custom destinations are possible on demand
-              </p>
+              <p> {t("chauffeurdesc")}</p>
+              <p className="text-[13px] italic">{t("chauffeurdescmini")}</p>
             </div>
           </div>
         </div>
@@ -100,7 +95,7 @@ function Services() {
                   style={{ fontFamily: "Nanum Myeongjo" }}
                   className="text-[#BB9B66]  text-3xl"
                 >
-                  Dogs
+                  {t("dogs")}
                 </h1>
                 <FontAwesomeIcon
                   icon={faJugDetergent}
@@ -108,7 +103,7 @@ function Services() {
                 />
               </div>
 
-              <p>Villa Palmire is a dog-friendly household.</p>
+              <p> {t("dogsdesc")}</p>
             </div>
           </div>
         </div>

@@ -10,6 +10,15 @@
   "riviera2": " Nice, Cannes, Antibes, Grasse, Saint-Tropez, Monaco or even Menton and so many others, make up between sea and mountains the unique character of the Côte d'Azur: a harmonious blend of culture, art, festive pleasures in an exceptional natural setting.",
   "rooms": "Rooms",
   "events": "Events",
+  "breakfast": "Breakfast",
+  "taxi": "Chauffeur",
+  "dogs": "Dogs",
+  "eventsdesc": "Villa Palmire can be booked for private events, dinners, birthdays and more.",
+  "breakfastdesc": "Our daily breakfast offers pastries, orange juice, coffee and tea.",
+  "breakfastdescmini": "No gluten and vegan options available",
+  "chauffeurdesc": "We offer a taxi service between La Turbie and Monaco.",
+  "chauffeurdescmini": "Custom destinations are possible on demand",
+  "dogsdesc": "Villa Palmire is a dog-friendly household.",
   "region": "Region",
   "maindesc": "Located in the town of La Turbie, Villa Palmire welcomes you in a setting of greenery and tranquility, just 8 km from the Principality of Monaco.",
   "book": "Book",
@@ -18,5 +27,6 @@
   "name": "Name",
   "email": "Email",
   "message": "Message",
-  "sendmessage": "Send"
+  "sendmessage": "Send",
+  "messagetoast": "Message sent successfully"
 }

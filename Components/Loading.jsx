@@ -25,7 +25,7 @@ function Loading() {
               alt="Villa Palmire Logo"
               width={35}
               height={35}
-              src="/logovp.png"
+              src="/logovp.webp"
               className="size-20 "
             />
             <div

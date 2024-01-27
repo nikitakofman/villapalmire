@@ -10,6 +10,15 @@
   "riviera2": "Nizza, Cannes, Antibes, Grasse, Saint-Tropez, Monaco o anche Mentone e tante altre, compongono tra mare e montagna il carattere unico della Costa Azzurra: un connubio armonioso di cultura, arte, piaceri festivi in ​​un contesto eccezionale ambiente naturale.",
   "rooms": "Camere",
   "events": "Eventi",
+  "breakfast": "Colazione",
+  "taxi": "Taxi",
+  "dogs": "Cani",
+  "eventsdesc": "Villa Palmire può essere prenotata per eventi privati, cene, compleanni e altro.",
+  "breakfastdesc": "La nostra colazione quotidiana offre pasticceria, succo d'arancia, caffè e tè.",
+  "breakfastdescmini": "Opzioni senza glutine e vegane disponibili",
+  "chauffeurdesc": "Offriamo un servizio taxi tra La Turbie e Monaco.",
+  "chauffeurdescmini": "Destinazioni personalizzate sono possibili su richiesta",
+  "dogsdesc": "Villa Palmire è una casa amica dei cani.",
   "region": "Regione",
   "maindesc": "Situata nella città di La Turbie, la Villa Palmire vi accoglie in un ambiente di verde e tranquillità, a soli 8 km dal Principato di Monaco.",
   "book": "Prenota",
@@ -18,5 +27,6 @@
   "name": "Nome",
   "email": "Email",
   "message": "Messaggio",
-  "sendmessage": "Invia"
+  "sendmessage": "Invia",
+  "messagetoast": "Messaggio inviato con successo"
 }
