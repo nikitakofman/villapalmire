@@ -20,24 +20,27 @@ const i18nNamespaces = ["home", "common"];
 export default async function Home({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
   return (
-    <TranslationsProvider
-      resources={resources}
-      locale={locale}
-      namespaces={i18nNamespaces}
-    >
+    <>
+      {" "}
       <Loading />
-      <main className="h-full main">
-        <Header />
+      <TranslationsProvider
+        resources={resources}
+        locale={locale}
+        namespaces={i18nNamespaces}
+      >
+        <main className="h-full main">
+          <Header />
 
-        <Main />
-        <SlidingImages />
-        <Regions />
-        <Rooms />
-        <Services />
+          <Main />
+          <SlidingImages />
+          <Regions />
+          <Rooms />
+          <Services />
 
-        <Contact />
-        <Footer />
-      </main>
-    </TranslationsProvider>
+          <Contact />
+          <Footer />
+        </main>
+      </TranslationsProvider>
+    </>
   );
 }

@@ -53,7 +53,9 @@ function Contact() {
                 icon={faPhone}
                 className="size-6 text-[#BB9B66]"
               />
-              <p className="px-2">+33 (0) 7 61 68 44 84</p>
+              <p className="px-2">
+                <a href="tel:+33761684484">+33 (0) 7 61 68 44 84</a>
+              </p>
             </div>
             <div className="flex">
               <FontAwesomeIcon
