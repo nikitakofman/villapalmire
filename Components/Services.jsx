@@ -83,10 +83,7 @@ function Services() {
                 />
               </div>
 
-              <p>
-                We offer a taxi service between La Turbie and Monaco for a fixed
-                50€ fee.
-              </p>
+              <p>We offer a taxi service between La Turbie and Monaco.</p>
               <p className="text-[13px] italic">
                 Custom destinations are possible on demand
               </p>
@@ -95,7 +92,7 @@ function Services() {
         </div>
         <div className="h-full w-full  ">
           <div className="flex w-full h-full flex-col border-[0px] pt-3   border-[#BB9B66]">
-            <div className="w-full h-[100px] md:min-h-[200px] rounded-xl shadow-xl laundrybg"></div>
+            <div className="w-full h-[100px] md:min-h-[200px] rounded-xl shadow-xl dogsbg"></div>
             <div className="w-full h-full gap-3  border-[#BB9B66] mt-3 flex flex-col items-left text-left px-0 pb-3 md:pb-0 md:px-3 justify-start ">
               <div className="flex items-center pt-5 justify-between">
                 {" "}
@@ -103,7 +100,7 @@ function Services() {
                   style={{ fontFamily: "Nanum Myeongjo" }}
                   className="text-[#BB9B66]  text-3xl"
                 >
-                  Laundry
+                  Dogs
                 </h1>
                 <FontAwesomeIcon
                   icon={faJugDetergent}
@@ -111,7 +108,7 @@ function Services() {
                 />
               </div>
 
-              <p>Laundry service is available during your stay.</p>
+              <p>Villa Palmire is a dog-friendly household.</p>
             </div>
           </div>
         </div>
