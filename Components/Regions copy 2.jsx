@@ -28,10 +28,10 @@ export default function Regions() {
   return (
     <>
       <span id="region" class="anchor-offset" />
-      <div className="h-full">
+      <div className="h-svh">
         <div className="p-5 md:p-10 flex h-full flex-col ">
           <div className="flex flex-col  md:flex-row">
-            <div className="w-full hidden md:flex   md:h-[300px]  turbie" />
+            <div className="w-full hidden md:flex  md:min-h-full  turbie" />
             <div className="w-full  flex md:hidden flex-col justify-end  h-[200px] turbie">
               <h1
                 ref={ref2}
@@ -89,10 +89,10 @@ export default function Regions() {
                 </div>
               </div>
             </div>
-            <div className="w-full monaco  md:h-[300px] hidden md:flex"></div>
+            <div className="w-full monaco md:min-h-full hidden md:flex"></div>
           </div>
           <div className="flex flex-col md:flex-row  h-full">
-            <div className="w-full hidden md:flex  md:h-[300px] cote" />
+            <div className="w-full hidden md:flex cote" />
             <div className="w-full flex md:hidden flex-col justify-end h-[200px] cote">
               <h1
                 ref={ref3}
@@ -131,7 +131,7 @@ export default function Regions() {
 
 export function MaskText() {
   const { t } = useTranslation();
-  const phrases = [t("turbie1"), t("turbie2"), t("turbie3")];
+  const phrases = [t("turbie3")];
 
   const animation = {
     initial: { y: "100%" },
@@ -172,7 +172,7 @@ export function MaskText() {
 
 export function MaskText2() {
   const { t } = useTranslation();
-  const phrases = [t("monaco1"), t("monaco2")];
+  const phrases = [t("monaco2")];
 
   const animation = {
     initial: { y: "100%" },
@@ -213,7 +213,7 @@ export function MaskText2() {
 
 export function MaskText3() {
   const { t } = useTranslation();
-  const phrases = [t("riviera1"), t("riviera2")];
+  const phrases = [t("riviera2")];
 
   const animation = {
     initial: { y: "100%" },

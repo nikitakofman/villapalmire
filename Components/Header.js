@@ -54,15 +54,17 @@ function Header() {
         </div>
          
       </div>
-      <div className=" text-[14px] hidden min-w-[340px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-around w-full">
+      <div className=" text-[14px] hidden min-w-[400px] md:flex underline-animation [&>p]:cursor-pointer [&>p]:font-light justify-around w-full">
         {/* <p className="">nav1</p> */}
+        <p className="tracking-[0.5rem]">
+          <a href="#region">{t("region")}</a>
+        </p>
         <p className="tracking-[0.5rem]">
           <a href="#rooms">{t("rooms")}</a>
         </p>
         <p className="tracking-[0.5rem]">
-          <a href="#region">{t("region")}</a>
+          <a href="#contact">{t("contactmenu")}</a>
         </p>
-        {/* <p className="tracking-[0.5rem]">{t("events")}</p> */}
       </div>
       <div className=" w-0 md:w-full flex gap-3 justify-end pr-5 md:pr-10">
         {isNotMobile ? (

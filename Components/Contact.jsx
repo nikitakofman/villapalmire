@@ -56,6 +56,7 @@ function Contact() {
 
   return (
     <div className="h-full md:h-[380px] py-5 m-0 md:m-10  border-[0px] md:border border-[#BB9B66] text-black">
+      <div id="contact" />
       <ToastContainer
         toastStyle={{
           backgroundColor: "white",

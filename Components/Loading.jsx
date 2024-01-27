@@ -18,7 +18,7 @@ function Loading() {
     <div>
       {" "}
       {isLoading && (
-        <div class="fixed top-0  left-0 w-full h-full bg-white  flex justify-center items-center z-50">
+        <div className="fixed top-0  left-0 w-full h-full bg-white  flex justify-center items-center z-50">
           {/* Your loading screen content, e.g., a spinner */}
           <div className="container  flex items-center justify-center gap-5 flex-col">
             <Image

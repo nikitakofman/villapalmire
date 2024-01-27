@@ -11,8 +11,11 @@ import {
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Slider() {
+  const { t } = useTranslation();
+
   const [isSheetOpen, setSheetOpen] = useState(false);
 
   // Function to close the sheet
@@ -40,15 +43,17 @@ function Slider() {
           <SheetDescription>
             <div className="flex   underline-animation2 flex-col sm:flex-row justify-between text-white  gap-3 items-left text-left text-2xl">
               <div className="flex gap-2 w-full flex-col justify-between">
-                <a href="#rooms" onClick={closeSheet}>
-                  <p className="p-1 w-full cursor-pointer">Rooms</p>
-                </a>
                 <a href="#region" onClick={closeSheet}>
-                  <p className="p-1 w-full cursor-pointer">Region</p>
+                  <p className="p-1 w-full cursor-pointer">{t("region")}</p>
                 </a>
-                <p className=" p-1 w-full cursor-pointer">Events</p>
-
-                <p className=" p-1 w-full cursor-pointer">Contact</p>
+                <a href="#rooms" onClick={closeSheet}>
+                  <p className="p-1 w-full cursor-pointer">{t("rooms")}</p>
+                </a>
+                <a href="#contact" onClick={closeSheet}>
+                  <p className=" p-1 w-full cursor-pointer">
+                    {t("contactmenu")}
+                  </p>
+                </a>
               </div>
               {/* <div className="flex gap-2 w-full flex-col justify-between">
                 <p className=" p-1 w-full cursor-pointer">Contact</p>
