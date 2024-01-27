@@ -8,9 +8,39 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const { t } = useTranslation();
+
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then((result) => {
+        // toast.success(
+        //   `${language.en ? "Message sent successfully" : "Message envoyé"}`,
+        //   {
+        //     position: "top-right",
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined,
+        //     theme: "light",
+        //   }
+        // );
+        console.log(result);
+      });
+
+    e.target.reset();
+  };
 
   return (
     <div className="h-full md:h-[380px] py-5 m-0 md:m-10  border-[0px] md:border border-[#BB9B66] text-black">
@@ -23,27 +53,39 @@ function Contact() {
             >
               {t("contact")}
             </h1>
-            <Input
-              type="text"
-              placeholder={t("name")}
-              className="bg-white text-black w-6/12"
-            />
-            <Input
-              type="email"
-              placeholder={t("email")}
-              className="bg-white text-black w-6/12"
-            />
-            <Textarea
-              className="w-full bg-white text-black"
-              placeholder={t("message")}
-            />
-            <div class="h-[30px]">
-              <button class=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]">
-                <a class="font-light text-[14px] " href="#">
+            <form
+              onSubmit={handleOnSubmit}
+              className=" text-slate-300 flex flex-col "
+            >
+              <Input
+                type="text"
+                id="user_name"
+                name="user_name"
+                placeholder={t("name")}
+                className="bg-white text-black w-6/12"
+              />
+              <Input
+                type="email"
+                id="user_email"
+                name="user_email"
+                placeholder={t("email")}
+                className="bg-white text-black w-6/12"
+              />
+              <Textarea
+                id="user_message"
+                name="user_message"
+                className="w-full bg-white text-black"
+                placeholder={t("message")}
+              />
+              <div class="h-[30px]">
+                <button
+                  type="submit"
+                  class=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
+                >
                   {t("sendmessage")}
-                </a>
-              </button>
-            </div>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div className="w-full py-10 h-full flex-col  flex items-center justify-center">
