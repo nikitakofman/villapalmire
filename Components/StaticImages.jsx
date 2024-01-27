@@ -43,7 +43,7 @@ const Column = ({ images }) => {
     <div className={styles.column}>
       {images.map((src, i) => (
         <div key={i} className={styles.imageContainer}>
-          <Image src={`/images/${src}`} alt="image" fill priority />
+          <Image src={`/images/${src}`} alt="image" fill />
         </div>
       ))}
     </div>
