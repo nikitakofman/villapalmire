@@ -54,94 +54,124 @@ function Contact() {
     e.target.reset();
   };
 
+  const openNK = () => {
+    window.open("https://www.nikitakofman.com", "_blank");
+  };
+
   return (
-    <div className="h-full md:h-[380px] py-5 m-0 md:m-10  border-[0px] md:border border-[#BB9B66] text-black">
-      <div id="contact" />
-      <ToastContainer
-        toastStyle={{
-          backgroundColor: "white",
-          color: "black",
-          border: "red",
-        }}
-        progressStyle={{ backgroundColor: "#BB9B66" }}
-      />
-      <div className="flex flex-col md:flex-row h-full  ">
-        <div className="w-full h-full flex items-center  justify-center">
-          <div className="w-full px-5 md:px-0 md:w-9/12 flex flex-col gap-4 items-left  justify-center">
-            <h1
-              className="text-2xl text-gray-700"
-              style={{ fontFamily: "Open Sans" }}
-            >
-              {t("contact")}
-            </h1>
-            {/* <button onClick={handleTest}>bruh</button> */}
-            <form
-              onSubmit={handleOnSubmit}
-              className=" text-slate-300 gap-3 flex flex-col "
-            >
-              <Input
-                required
-                type="text"
-                id="user_name"
-                name="user_name"
-                placeholder={t("name")}
-                className="bg-white text-black w-6/12"
-              />
-              <Input
-                required
-                type="email"
-                id="user_email"
-                name="user_email"
-                placeholder={t("email")}
-                className="bg-white text-black w-6/12"
-              />
-              <Textarea
-                required
-                id="user_message"
-                name="user_message"
-                className="w-full bg-white text-black"
-                placeholder={t("message")}
-              />
-              <div className="h-[30px]">
-                <button
-                  type="submit"
-                  className=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
-                >
-                  {t("sendmessage")}
-                </button>
-              </div>
-            </form>
+    <>
+      {/* CONTACT FORM START */}
+      <div className="relative z-10 md:h-[380px] m-5 md:m-10 bg-white shadow-xl md:mb-[-180px] mb-[-320px] text-black">
+        <div id="contact" />
+        <ToastContainer
+          toastStyle={{
+            backgroundColor: "white",
+            color: "black",
+            border: "red",
+          }}
+          progressStyle={{ backgroundColor: "#BB9B66" }}
+        />
+        <div className="flex flex-col border border-[#BB9B66] p-5 md:p-5 md:shadow-xl md:flex-row h-full  ">
+          <div className="w-full h-full flex  items-center ">
+            <div className="w-full  md:p-5  border-r-[#BB9B66]/30   flex flex-col gap-4 items-left  justify-center">
+              <h1
+                className="text-2xl text-gray-700"
+                style={{ fontFamily: "Open Sans" }}
+              >
+                {t("contact")}
+              </h1>
+              {/* <button onClick={handleTest}>bruh</button> */}
+              <form
+                onSubmit={handleOnSubmit}
+                className=" text-slate-300 gap-3 flex flex-col "
+              >
+                <Input
+                  required
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  placeholder={t("name")}
+                  className="bg-white text-black w-6/12"
+                />
+                <Input
+                  required
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  placeholder={t("email")}
+                  className="bg-white text-black w-6/12"
+                />
+                <Textarea
+                  required
+                  id="user_message"
+                  name="user_message"
+                  className="w-full bg-white  max-h-28 text-black"
+                  placeholder={t("message")}
+                />
+                <div className="h-[30px]">
+                  <button
+                    type="submit"
+                    className=" h-[30px] shadow-2xl text-white bg-gray-800 outline px-2 outline-offset-2 outline-1 outline-gray-600 hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
+                  >
+                    {t("sendmessage")}
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-        <div className="w-full py-10 h-full flex-col  flex items-center justify-center">
-          <div className="flex text-[16px] text-gray-700  gap-10 md:gap-14 flex-col">
-            <div className="flex">
-              <FontAwesomeIcon
-                icon={faPhone}
-                className="size-6 text-[#BB9B66]"
-              />
-              <p className="px-2">
-                <a href="tel:+33761684484">+33 (0) 7 61 68 44 84</a>
-              </p>
-            </div>
-            <div className="flex">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="size-6 text-[#BB9B66]"
-              />
-              <p className="px-2">palmire.news3000@gmail.com</p>
-            </div>
-            <div className="flex w-full">
-              <FontAwesomeIcon
-                icon={faLocationPin}
-                className="size-6 text-[#BB9B66]"
-              />
-              <p className="px-2">La Turbie, France</p>
+          <div className="w-full  pt-8 h-full flex-col  flex items-center justify-center">
+            <div className="flex text-[16px] text-gray-700  gap-10 md:gap-14 flex-col">
+              <div className="flex flex-col items-center md:gap-0 gap-2 md:flex-row">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="size-6 text-[#BB9B66]"
+                />
+                <p className="px-2">
+                  <a href="tel:+33761684484">+33 (0) 7 61 68 44 84</a>
+                </p>
+              </div>
+              <div className="flex flex-col items-center md:gap-0 gap-2 md:flex-row">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="size-6 text-[#BB9B66]"
+                />
+                <p className="px-2">palmire.news3000@gmail.com</p>
+              </div>
+              <div className="flex flex-col items-center md:gap-0 gap-2 md:flex-row">
+                <FontAwesomeIcon
+                  icon={faLocationPin}
+                  className="size-6 text-[#BB9B66]"
+                />
+                <p className="px-2">La Turbie, France</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      {/* CONTACT FORM END */}
+      {/* FOOTER  START */}
+      <div className="w-full  h-96  md:h-60 bg-[#BB9B66] py-2">
+        <div className="flex h-full text-white ">
+          <div className="flex flex-wrap justify-end  flex-col  w-full items-center px-5 md:px-10">
+            <div className="flex w-full pb-[10px] justify-between">
+              <p className="text-[14px]">© Villa Palmire 2024</p>
+
+              <div
+                className="flex hover:cursor-pointer hover:text-gray-200"
+                onClick={openNK}
+              >
+                {" "}
+                <p className="text-[14px] hidden sm:flex mr-1">
+                  {t("created1")}
+                </p>
+                <p className="text-[14px]">nikitakofman.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* FOOTER  END */}
+    </>
   );
 }
 

@@ -38,7 +38,6 @@ export default async function Home({ params: { locale } }) {
           <Services />
 
           <Contact />
-          <Footer />
         </main>
       </TranslationsProvider>
     </>
