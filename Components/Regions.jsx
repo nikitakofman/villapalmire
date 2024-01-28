@@ -94,7 +94,7 @@ export default function Regions() {
                 </h1>
               </div>
               <div className="w-full flex items-center justify-center bg-white">
-                <div className="py-3 flex flex-col h-full justify-between  w-full pr-4 ">
+                <div className="py-3 flex flex-col h-full justify-between  w-full md:pr-4 ">
                   <h1
                     ref={ref2}
                     className={`text-left hidden md:flex flex-col tracking-widest text-[#BC9D68] w-full pl-0  my-0  text-3xl ${
@@ -107,7 +107,7 @@ export default function Regions() {
                   <div className="py-0 pl-0.5 md:pl-0 md:py-3 ">
                     <MaskText2 />
                   </div>
-                  <div className="w-full flex justify-end pt-5 md:pt-0">
+                  <div className="w-full  flex justify-end pt-5 md:pt-0">
                     <button
                       className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
                       onClick={() =>
@@ -156,9 +156,9 @@ export default function Regions() {
                     {" "}
                     <MaskText3 />
                   </div>
-                  <div className="w-full flex justify-end pt-5 md:pt-0 ">
+                  <div className="w-full flex justify-end pt-5 md:pt-0 mt-3 -mb-3 ">
                     <button
-                      className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2"
+                      className="cursor-pointer font-semibold overflow-hidden relative z-100 border border-[#BC9D68] group px-8 py-2 "
                       onClick={() =>
                         window.open(
                           "https://cotedazurfrance.fr/decouvrir/grands-evenements/"

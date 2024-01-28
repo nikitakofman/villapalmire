@@ -119,7 +119,7 @@ function Contact() {
               </form>
             </div>
           </div>
-          <div className="w-full  pt-8 h-full flex-col  flex items-center justify-center">
+          <div className="w-full  md:pt-8 md:pb-8 pt-8 pb-4 h-full flex-col  flex items-center justify-center">
             <div className="flex text-[16px] text-gray-700  gap-10 md:gap-14 flex-col">
               <div className="flex flex-col items-center md:gap-0 gap-2 md:flex-row">
                 <FontAwesomeIcon
