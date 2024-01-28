@@ -21,7 +21,7 @@ export default function Rooms() {
         }`}
       >
         <div className="p-5 md:p-10 gap-2 h-full flex-col md:flex-row flex items-center justify-center">
-          <div className="chambre1bg w-full h-full flex flex-col items-left justify-end">
+          <div className="chambre1bg w-full h-full flex flex-col items-left justify-start">
             {/* <div className=" m-3 border-2 border-[#BB9B66] top-[300px] p-3 bg-black/40 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus, aut! Consequatur, laborum commodi nam pariatur
@@ -34,7 +34,7 @@ export default function Rooms() {
               SUNLIGHT
             </div>
           </div>
-          <div className="chambre2bg w-full h-full flex flex-col items-left justify-end">
+          <div className="chambre2bg w-full h-full flex flex-col items-left justify-start">
             {/* <div className=" m-3 border-2 border-[#BB9B66] p-3 bg-black/40 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus, aut! Consequatur, laborum commodi nam pariatur
@@ -47,7 +47,7 @@ export default function Rooms() {
               SUNRISE
             </div>
           </div>
-          <div className="chambre3bg w-full h-full flex flex-col items-left justify-end">
+          <div className="chambre3bg w-full h-full flex flex-col items-left justify-start">
             {/* <div className=" m-3 border-2 border-[#BB9B66] p-3 bg-black/40 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus, aut! Consequatur, laborum commodi nam pariatur
