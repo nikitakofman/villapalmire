@@ -94,7 +94,7 @@ export default function Regions() {
                 </h1>
               </div>
               <div className="w-full flex items-center justify-center bg-white">
-                <div className="py-3 flex flex-col h-full justify-between  w-full md:pr-4 ">
+                <div className="py-3 md:pb-5 flex flex-col h-full justify-between  w-full md:pr-4 ">
                   <h1
                     ref={ref2}
                     className={`text-left hidden md:flex flex-col tracking-widest text-[#BC9D68] w-full pl-0  my-0  text-3xl ${

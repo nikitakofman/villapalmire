@@ -16,7 +16,7 @@ export default function Rooms() {
       <div id="rooms" />
       <div
         ref={ref}
-        className={`h-svh transition-opacity duration-700 ${
+        className={`h-[600px] transition-opacity duration-700 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
