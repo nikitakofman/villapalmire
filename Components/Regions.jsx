@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import SlideText from "./SlideText";
+
 import styles from "./text.module.css";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
