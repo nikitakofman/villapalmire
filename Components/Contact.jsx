@@ -83,7 +83,7 @@ function Contact() {
               {/* <button onClick={handleTest}>bruh</button> */}
               <form
                 onSubmit={handleOnSubmit}
-                className=" text-slate-300 gap-3 flex flex-col "
+                className=" text-slate-300 gap-3  py flex flex-col "
               >
                 <Input
                   required
