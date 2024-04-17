@@ -16,45 +16,42 @@ export default function Rooms() {
       <div id="rooms" />
       <div
         ref={ref}
-        className={`h-[600px] transition-opacity duration-700 ${
+        className={`h-full transition-opacity duration-700 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="p-5 md:p-10 gap-2 h-full flex-col md:flex-row flex items-center justify-center">
-          <div className="chambre1bg w-full h-full flex flex-col items-left justify-start">
-            {/* <div className=" m-3 border-2 border-[#BB9B66] top-[300px] p-3 bg-black/40 text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus, aut! Consequatur, laborum commodi nam pariatur
-              voluptate
-            </div> */}
+        <div className="p-5 md:p-10 gap-2  flex-col md:flex-row flex items-center justify-center">
+          <div className="w-full  flex  items-left justify-start">
+            <video autoPlay muted loop className="w-full  object-cover">
+              <source src="/room1vp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div
-              className=" m-3 tracking-[0.6em] text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
+              className=" m-3 tracking-[0.6em] absolute text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
               style={{ fontFamily: "Nanum Myeongjo" }}
             >
               SUNLIGHT
             </div>
           </div>
-          <div className="chambre2bg w-full h-full flex flex-col items-left justify-start">
-            {/* <div className=" m-3 border-2 border-[#BB9B66] p-3 bg-black/40 text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus, aut! Consequatur, laborum commodi nam pariatur
-              voluptate
-            </div> */}
+          <div className="w-full  flex flex-col items-left justify-start">
+            <video autoPlay muted loop className="w-full  object-cover">
+              <source src="/room2vp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div
-              className=" m-3 tracking-[0.6em] text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
+              className=" m-3 tracking-[0.6em] absolute text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
               style={{ fontFamily: "Nanum Myeongjo" }}
             >
               SUNRISE
             </div>
           </div>
-          <div className="chambre3bg w-full h-full flex flex-col items-left justify-start">
-            {/* <div className=" m-3 border-2 border-[#BB9B66] p-3 bg-black/40 text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus, aut! Consequatur, laborum commodi nam pariatur
-              voluptate
-            </div> */}
+          <div className=" w-full  flex flex-col items-left justify-start">
+            <video autoPlay muted loop className="w-full  object-cover">
+              <source src="/room3vp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div
-              className=" m-3 tracking-[0.6em] text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
+              className=" m-3 tracking-[0.6em] absolute text-xl font-extrabold text-center border-2 border-[#BB9B66] p-3 bg-black/60 text-white"
               style={{ fontFamily: "Nanum Myeongjo" }}
             >
               SUNSET
